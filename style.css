@@ -1,0 +1,376 @@
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+  font-family: Raleway, serif;
+}
+
+.d-none {
+  display: none !important;
+}
+/* Header styling */
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: center;
+  cursor: pointer;
+  gap: 100px;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 30px;
+  position: relative;
+}
+
+.header_content {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  max-width: 1440px;
+  justify-content: space-between;
+}
+
+.logo-img img {
+  width: 150px;
+  height: 50px;
+  justify-content: center;
+}
+
+.logo-img:hover {
+  transform: scale(1.3);
+  transition: 250ms ease-in-out;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.desktop-navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+li {
+  font-family: "Inter", sans-serif;
+  line-height: 5px;
+  text-underline-offset: 3px;
+  list-style: none;
+}
+
+li:hover {
+  transform: scale(1.3);
+  transition: 250ms ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.burger-btn {
+  width: 24px;
+  height: 24px;
+  display: none;
+  cursor: pointer;
+}
+/* styiling mobile navbar */
+.urger-menu-buttons {
+  width: 20%;
+  border: 1px solid green;
+}
+.mobile-navbar {
+  display: flex;
+  width: 150px;
+  position: absolute;
+  top: 94px;
+  right: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 30px;
+  height: 200px;
+}
+
+.mobile-navbar-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.close-btn {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+}
+
+main {
+  flex: 1;
+}
+
+.main-picture {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  max-height: 450px;
+  border-radius: 15px;
+}
+
+.main-recipe {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  background: linear-gradient(to bottom, #6ddf6d 0%, #4caf50 100%);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  height: 50px;
+  width: 200px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.outer-layer-white {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  margin-top: 120px;
+  justify-content: center;
+}
+
+.outer-layer-white-container {
+  display: flex;
+  width: fit-content;
+  max-width: 1440px;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 30px;
+}
+
+.outer-layer-gray {
+  display: flex;
+  width: 100%;
+  margin: 120px auto 0;
+  justify-content: center;
+  margin-top: 120px;
+  background-color: #d1d0d0;
+}
+
+.outer-layer-gray-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  padding: 40px 30px;
+}
+
+.foto_desc {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pic-layer-gray {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pic-layer-gray img {
+  width: 50%;
+  align-self: center;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 15px;
+  gap: 20px;
+}
+
+h2 {
+  display: flex;
+  cursor: pointer;
+}
+
+h2:hover {
+  box-shadow: 0 2px 40px rgba(148, 120, 120, 0.967);
+}
+
+/* Bottom layer */
+h1 {
+  display: flex;
+  font-family: "Raleway", serif;
+  font-size: 24px;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.txt_and_btn {
+  display: flex;
+  /* gap: left 20px; */
+  flex-direction: column;
+  gap: 40px;
+}
+
+.txt_btn_foto {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+  gap: 20px;
+}
+
+.foto-bottom-layer {
+  width: 300px;
+  height: 300px;
+  align-self: center;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Footer styling */
+footer {
+  display: flex;
+  width: 100%;
+  padding: 30px 0;
+  justify-content: center;
+  cursor: pointer;
+  gap: 100px;
+  background-color: #363636;
+  box-sizing: border-box;
+  margin-top: 120px;
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  justify-content: space-between;
+  padding: 0, 30px;
+}
+
+.footer-img {
+  width: 50px;
+  height: 50px;
+}
+
+h3 {
+  font-size: 12px;
+  color: #d1d0d0;
+}
+
+.logo-footer {
+  width: 150px;
+  height: 50px;
+  justify-content: center;
+}
+
+/* Media query */
+
+@media (max-width: 800px) {
+  /* shows the burger icon on mobile; */
+  .burger-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* Adjust header spacing on mobile */
+  .header_content {
+    align-items: center;
+  }
+
+  .main-picture {
+    object-fit: contain;
+    width: 70%;
+    height: auto;
+    max-width: 350px;
+    max-height: 250px;
+    border-radius: 15px;
+  }
+
+  h1 {
+    display: flex;
+    font-family: "Raleway", serif;
+    font-size: 24px;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .outer-layer-white-container {
+    padding: 0, 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .outer-layer-gray {
+    justify-content: center;
+    align-items: center;
+  }
+  .pic-layer-gray {
+    flex-direction: column;
+    align-items: center;
+  }
+  .txt_btn_foto {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .txt_and_btn {
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-burger {
+    display: block;
+  }
+}

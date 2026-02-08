@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="icon" type="image" href="./img/favicon.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <!-- JS files -->
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header_content">
+        <div class="logo-img">
+          <img
+            src="./img/Logo_header.png"
+            alt="image of a chef's cap followed by the word kochwelt"
+          />
+        </div>
+        <nav>
+          <ul class="desktop-navbar">
+            <li><a href="./index.html">Start</a></li>
+            <li>
+              <a href="./html/recipe-of-the-day.html">Recipe of the day</a>
+            </li>
+            <li><a href="./html/contact-form.html"> Contact</a></li>
+            <li><a href="#">Legal noctice</a></li>
+          </ul>
+        </nav>
+        <ul class="burger-menu-buttons">
+          <li>
+            <img
+              onclick="toggleMobileNav()"
+              id="burger_btn"
+              class="burger-btn"
+              src="./img/burger_btn.jpg"
+              alt="mobile button"
+            />
+          </li>
+          <li>
+            <img
+              onclick=""
+              id="close_btn"
+              class="close-btn d-none"
+              src="./img/close_btn.jpg"
+              alt="close button"
+            />
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- mobile Navbar menu -->
+    <nav class="mobile-navbar d-none" id="mobile_nav">
+      <ul class="mobile-navbar-ul">
+        <li><a href="./index.html">Start</a></li>
+        <li><a href="./html/recipe-of-the-day.html">Recipe of the day</a></li>
+        <li><a href="./html/contact-form.html"> Contact</a></li>
+        <li><a href="#">Legal noctice</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="outer-layer-white">
+        <div class="outer-layer-white-container">
+          <img
+            class="main-picture"
+            src="./img/recipe_kaiserschmarrn.jpg"
+            alt="image rapresenting a pan with delicious tight with suggar topping and crannberies on top"
+          />
+          <div class="main-recipe">
+            <h1>Granny's Keiserschmarrn</h1>
+            <div class="recipe_txt">
+              Who doesn't enjoy granny's delicious Kaiserschmarrn? It warms the
+              heart and fills you up after a hard day on the slopes. With just a
+              few ingredients and a few simple steps, you can dive back into the
+              world of your childhood!
+            </div>
+            <button class="btn">
+              <a href="./html/kottbullar.html">Open recipe</a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="outer-layer-gray">
+        <div class="outer-layer-gray-container">
+          <h1>Want to try something new?</h1>
+          <div class="pic-layer-gray">
+            <div class="foto_desc">
+              <img
+                src="./img/recipe_porkribs.jpg"
+                alt="image representing appetizing porkribs"
+              />
+              <h2>
+                <a href="./html/pork-ribs-with-coleslaw.html">Porkribs</a>
+              </h2>
+            </div>
+            <div class="foto_desc">
+              <img
+                src="./img/recipe_koettbullar.jpg"
+                alt="image representing smash potatoes and patties in souce"
+              />
+              <h2><a href="./html/kottbullar.html">kottbullar</a></h2>
+            </div>
+            <div class="foto_desc">
+              <img
+                src="./img/recipe_iskender.jpg"
+                alt=" image of traditional turkish plate containing meat, souercream and paprika"
+              />
+              <h2>
+                <a href="./html/turkish-iskender.html">Turkish Iskender</a>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="outer-layer-white">
+        <div class="outer-layer-white-container">
+          <div class="bottom-container">
+            <h1>Thermomix vs. Pan</h1>
+            <div class="txt_btn_foto">
+              <div class="txt_and_btn">
+                My friend Martin said that cooking with the Thermomix is better
+                than cooking with a pot and pan. But is he right? Is it really
+                faster? And is it tasty? In my latest blog, I test the Swedish
+                classic Köttbullar — once in the Thermomix, once in the pan.
+                Let’s see who wins. 😄
+                <button class="btn">Meli's Blog</button>
+              </div>
+              <img
+                class="foto-bottom-layer"
+                src="./img/blog_img.jpg"
+                alt="image of a girl smiling and thinking at cooking"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <img class="logo-footer" src="./img/Logo_header.png" alt="logo image" />
+        <h3>
+          © 2025 Kochwelt - All rights reserved <br />
+          Photos by: Maxime Griffin | RitaE | Hans
+        </h3>
+        <div class="footer-img-container">
+          <img
+            class="footer-img"
+            src="./img/Facebook_Logo_(2019).png"
+            alt="logo facebook"
+          />
+          <img
+            class="footer-img"
+            src="./img/pngtree-instagram-icon-png-image_6315974.png"
+            alt="logo instagram"
+          />
+          <img
+            class="footer-img"
+            src="./img/Twitter_Social_Icon_Circle_Color.png"
+            alt="logo tweeter"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

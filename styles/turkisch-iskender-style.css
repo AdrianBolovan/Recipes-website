@@ -1,0 +1,13 @@
+.foto-main {
+    background-image: url('../img/recipe_iskender.jpg');
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.td-p {
+    font-weight: bold;
+    font-size: 18px;  
+}

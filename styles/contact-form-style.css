@@ -1,0 +1,36 @@
+main { 
+    display: flex;
+    padding-top: 120px; 
+    align-items: center;
+    justify-content: center;
+ }
+  .coverage-table {
+    display: flex;
+    background-color: #e0f7ec;
+    max-width: 1440px;
+    width: 300px;
+    justify-content: center;
+    height: fit-content;
+ }
+
+ form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+ }
+
+ .input {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+ }
+
+ .input-txt {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+ }
+

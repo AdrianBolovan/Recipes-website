@@ -1,0 +1,240 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+    font-family: Raleway, serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.main-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.granny-keiserschmarrn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 100px 0;  
+}
+
+ .h1-recipe-of-the-day {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Raleway", serif;
+    font-size: 32px;
+}
+
+.foto-main {
+    background-image: url('../img/recipe_kaiserschmarrn.jpg');
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.logo-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 6px;
+    padding-top: 20px;
+}
+
+.logo-btn-content {
+    display: flex;
+    height: 50px;
+    width: 120px;
+    gap: 10px;
+    border-radius: 10px;
+    border: none;
+    align-items: center;  
+    justify-content: center;
+    background-color: #e2e2e2;
+}
+
+.logo-btn-content img {
+    width: 30px;
+    height: 30px;
+}
+
+.separator { 
+    background-color: rgb(45, 42, 42);
+    width: 100%;
+    height: 1px;
+    align-items: center;
+}
+
+.calculator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+ .calculator-btns {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 0 20px;
+ }
+
+  .ingredients-btn {
+    display: flex;
+    gap: 20px;
+ }
+
+  .btn-and-input { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+ } 
+
+.num-portion {
+    width: 60px;
+    height: 40px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    border-right: none;
+}
+
+ input {
+   text-align: center;
+ }
+
+.btn {
+    background: linear-gradient(to bottom, #6ddf6d 0%, #4caf50 100%); 
+    border: none; 
+    border-radius: 
+    8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    color: white; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    padding: 12px 24px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+    height: 50px;
+    width: 200px;
+}
+
+
+.btn:hover {
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); 
+}
+
+table {
+    border-radius: 5%;
+    width: 100%;
+    text-align: left;
+    border-collapse: separate;
+    text-align: center;
+    border-spacing: 0;
+    /* border: 1px solid black; */
+}
+
+td {
+    height: 50px;
+    padding-left: 50px;
+    /* border: 1px solid blue; */
+}
+
+.td-value {
+    width: 10px;
+}
+
+.td-unit {
+    width: 10px;
+}
+
+.td-ingredients {
+    text-align: left;
+}
+
+tr:nth-child(even) { 
+    background-color: #e2e2e2; 
+    border-radius: 10%;
+} 
+
+tr:nth-child(odd) { 
+    background-color: white; 
+}
+
+tr td:first-child { border-top-left-radius: 10px; 
+                    border-bottom-left-radius: 10px; 
+} 
+    
+tr td:last-child { border-top-right-radius: 10px; 
+                   border-bottom-right-radius: 10px; 
+}
+
+.preparation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.preparation-time {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+.p-bold {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+/* asa am crescut specificitatea butonului clasei 
+initiale de buton ca sa fac butonul mai mare in 
+sectiunea asta */
+
+.logo-btn-content.ing {
+    width: 200px;
+}
+
+
+@media(max-width: 750px) {
+
+.calculator {
+    flex-direction: column;
+}
+
+.calculator-btns {
+    flex-direction: column;
+}
+}
+
+@media(max-width: 500px) {
+
+.preparation {
+    align-items: center;
+}
+.preparation-time {
+    flex-direction: column;
+    align-items: center;
+    }
+}
