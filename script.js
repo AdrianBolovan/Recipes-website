@@ -13,5 +13,4 @@ function toggleMobileNav() {
     closeBtn.classList.add("d-none");
   }
 
-  mobileNav.classList.
 }
