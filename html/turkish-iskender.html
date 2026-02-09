@@ -16,20 +16,36 @@
             <div class="logo-img">
                 <img src="../img/Logo_header.png" alt="image of a chef's cap followed by the word kochwelt">
             </div>
-            <nav id="main-menu">
-                <ul>
-                    <li><a href="../index.html">Start</a></li>
-                    <li><a href="./recipe-of-the-day.html">Recipe of the day</a></li>
-                    <li><a href="./contact-form.html"> Contact</a></li>
-                    <li><a href="#">Legal noctice</a></li>
-                </ul>
-            </nav>
-            <!-- hier insert the burger menu -->
-       <button class="burger"> 
-         <span></span> 
-         <span></span> 
-         <span></span> 
-      </button>
+            <nav>
+          <ul class="desktop-navbar">
+            <li><a href="./index.html">Start</a></li>
+            <li>
+              <a href=".//recipe-of-the-day.html">Recipe of the day</a>
+            </li>
+            <li><a href=".//contact-form.html"> Contact</a></li>
+            <li><a href="#">Legal noctice</a></li>
+          </ul>
+        </nav>
+        <ul class="burger-menu-buttons">
+          <li>
+            <img
+              onclick="toggleMobileNav()"
+              id="burger_btn"
+              class="burger-btn"
+              src="./img/burger_btn.jpg"
+              alt="mobile button"
+            />
+          </li>
+          <li>
+            <img
+              onclick=""
+              id="close_btn"
+              class="close-btn d-none"
+              src="./img/close_btn.jpg"
+              alt="close button"
+            />
+          </li>
+        </ul>
     </header>
     <main>
         <div class="main-contain">

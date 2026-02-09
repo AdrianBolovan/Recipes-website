@@ -12,5 +12,5 @@ function toggleMobileNav() {
     burgerBtn.classList.remove("d-none");
     closeBtn.classList.add("d-none");
   }
-
 }
+
