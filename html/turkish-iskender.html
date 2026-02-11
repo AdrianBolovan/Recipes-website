@@ -1,28 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>recipe-of-the-day</title>
-    <link rel="icon" type="image" href="../img/favicon.png">
-    <link rel="stylesheet" href="../style.css">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="icon" type="image" href="../img/favicon.png" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../styles/recipe-of-the-day-style.css">
     <link rel="stylesheet" href="../styles/turkisch-iskender-style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+
+    <!-- JS files -->
+    <script src="../script.js" defer></script>
+  </head>
+  <body>
     <header>
-        <div class="header_content">
-            <div class="logo-img">
-                <img src="../img/Logo_header.png" alt="image of a chef's cap followed by the word kochwelt">
-            </div>
-            <nav>
+      <div class="header_content">
+        <div class="logo-img">
+          <img src="../img/Logo_header.png" alt="image of a chef's cap followed by the word kochwelt"/>
+        </div>
+        <nav>
           <ul class="desktop-navbar">
-            <li><a href="./index.html">Start</a></li>
+            <li><a href="../index.html">Start</a></li>
             <li>
-              <a href=".//recipe-of-the-day.html">Recipe of the day</a>
+              <a href="../html/recipe-of-the-day.html">Recipe of the day</a>
             </li>
-            <li><a href=".//contact-form.html"> Contact</a></li>
+            <li><a href="../html/contact-form.html"> Contact</a></li>
             <li><a href="#">Legal noctice</a></li>
           </ul>
         </nav>
@@ -32,21 +34,31 @@
               onclick="toggleMobileNav()"
               id="burger_btn"
               class="burger-btn"
-              src="./img/burger_btn.jpg"
+              src="../img/burger_btn.jpg"
               alt="mobile button"
             />
           </li>
           <li>
             <img
-              onclick=""
+              onclick="toggleMobileNav()"
               id="close_btn"
               class="close-btn d-none"
-              src="./img/close_btn.jpg"
+              src="../img/close_btn.jpg"
               alt="close button"
             />
           </li>
         </ul>
+      </div>
     </header>
+    <!-- mobile Navbar menu -->
+    <nav class="mobile-navbar d-none" id="mobile_nav">
+      <ul class="mobile-navbar-ul">
+        <li><a href="../index.html">Start</a></li>
+        <li><a href="../html/recipe-of-the-day.html">Recipe of the day</a></li>
+        <li><a href="../html/contact-form.html"> Contact</a></li>
+        <li><a href="#">Legal noctice</a></li>
+      </ul>
+    </nav>
     <main>
         <div class="main-contain">
           <section class="granny-keiserschmarrn">
