@@ -91,9 +91,9 @@ a {
   border: 1px solid green;
 }
 .mobile-navbar {
+  position: fixed;
   display: flex;
   width: 150px;
-  position: absolute;
   top: 94px;
   right: 30px;
   background: white;
@@ -108,9 +108,9 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 100%;
   width: 100%;
   padding: 15px 0;
+  gap: 30px;
 }
 
 .close-btn {

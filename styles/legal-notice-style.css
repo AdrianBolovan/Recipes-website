@@ -1,0 +1,5 @@
+.legal-notice-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+}
