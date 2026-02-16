@@ -63,16 +63,19 @@
          <form action="">
             <p>Contact us</p>
             <label for="">Add your name</label>
-            <input class="input" id="name" type="text" maxlength="50">
+            <input class="input" id="name" type="text" maxlength="50" oninput="hideAlertName()">
             <p class="alert-container" id="name_alert_msg"></p>
             <label for="">E-Mail Adress</label>
-            <input class="input" id="mail" type="email">
+            <input class="input" id="mail" type="email" oninput="hideAlertMail()">
              <p class="alert-container" id="mail_alert_msg"></p>
             <label for="">Message</label>
-            <textarea name="Message" class="input-txt" id=""></textarea>
+            <textarea name="Message" class="input-txt" id="txt_message" oninput="hideAlertText()"></textarea>
+            <p class="alert-container" id="txt_alert_msg"></p>
         </form>
-        <button class="btn-form" onclick="getInputValue()">Send</button>
-        <!-- <button onclick="hideAlertMessages()">Remove alert btn - test</button> -->
+        <button id="sendBtn" class="btn-form" onclick="getInputValue()">Send 
+        </button>
+        <p id="success"></p>
+        
         </div>
     </main>
         <footer> 

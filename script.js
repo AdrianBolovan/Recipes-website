@@ -14,46 +14,62 @@ function toggleMobileNav() {
     closeBtn.classList.add("d-none");
   }
 }
+// toggle adds and removes a css class as compared to add or remove which
+// only ad or remove a class
+// classList = access a class from css File
+// event.target = describes an user interaction with the page:
+// click touch scroll
 
-  // classList = access a class from css File
-  // event.target = describes an user interaction woth the page: 
-  // click touch scroll
-
-  // when adding a condition: first write the condition with if then {} and write what
-  // should happen when the condition is met 
-
+// when adding a condition: first write the condition with if then {} and write what
+// should happen when the condition is met
 
 function handleDocumentClick(event) {
   let closeBtn = document.getElementById("close_btn");
   let burgerBtn = document.getElementById("burger_btn");
   let mobileNav = document.getElementById("mobile_nav");
 
-  if(!closeBtn.contains(event.target) &&
-     !burgerBtn.contains(event.target)&&
-      !mobileNav.contains(event.target)) {
-        closeBtn.classList.add("d-none");
-        burgerBtn.classList.remove("d-none");
-        mobileNav.classList.add("d-none");
-      }
+  if (
+    !closeBtn.contains(event.target) &&
+    !burgerBtn.contains(event.target) &&
+    !mobileNav.contains(event.target)
+  ) {
+    closeBtn.classList.add("d-none");
+    burgerBtn.classList.remove("d-none");
+    mobileNav.classList.add("d-none");
+  }
 }
 
-document.addEventListener('click', handleDocumentClick);
-document.addEventListener('touchstart', handleDocumentClick);
-
+document.addEventListener("click", handleDocumentClick);
+document.addEventListener("touchstart", handleDocumentClick);
 
 //Functii pentru contact form
 function getInputValue() {
+  //accesez elemente de HTML prin id si le salvez in
+  //variablie: name, email, textarea
   let name = document.getElementById("name");
   let email = document.getElementById("mail");
+  let textarea = document.getElementById("txt_message");
+
+  //creez noi variabile, in care stilizez
+  //ceea ce scrie persoana in fromular, stergand spattile albe
+  //cu .trim()
   let nameValue = name.value.trim();
   let emailValue = email.value.trim();
+  let textValue = textarea.value.trim();
 
-  if(nameValue === "") {
+  if (nameValue === "") {
     showNameAlertMessage();
   }
 
-  if(emailValue === "" || !emailValue.includes("@")) {
+  if (emailValue === "" || !emailValue.includes("@")) {
     showMailAlertMessage();
+  }
+
+  if (textValue === "") {
+    showTexAlertMessage();
+  }
+  else {
+    showSuccesMessage();
   }
 }
 
@@ -69,24 +85,35 @@ function showMailAlertMessage() {
   alertContainer.classList.add("alert");
 }
 
-function hideAlertMessages(){
-  //1. Identifici elementele de HTML care au alerta
-  let alertContainerName = document.getElementById("name_alert_msg");
-  let alertContainerMail = document.getElementById("mail_alert_msg");
-
-  //2. Le stergi mesajul de alerta
-  alertContainerName.innerText = "";
-  alertContainerMail.innerText = "";
-
-  //3. Le stergi clasa de CSS
-  alertContainerName.classList.remove("alert");
-  alertContainerMail.classList.remove("alert");
+function showTexAlertMessage() {
+  let alertContainer = document.getElementById("txt_alert_msg");
+  alertContainer.innerText = "Please insert your message";
+  alertContainer.classList.add("alert");
 }
 
 
-//functie pentru <textartea> care nu trebuie de asemenea sa se extinda
-//la infintit, pentru asta trebuie doar sa fie stilizata in CSS
+function showSuccesMessage(){
+  let successContainer = document.getElementById("success");
+  successContainer.innerText = "Thank you for your message!";
+  successContainer.classList.add("success"); 
+  
+  // asa am cautat in css clasa pe care am facut-o pt mesajul de succes
+}
 
-// se creeaza functia si se adauga la conditie
+function hideAlertName() {
+  let alertContainerName = document.getElementById("name_alert_msg");
+  alertContainerName.innerText = "";
+  alertContainerName.classList.remove("alert");
+}
 
+function hideAlertMail() {
+  let alertContainerMail = document.getElementById("mail_alert_msg");
+  alertContainerMail.innerText = "";
+  alertContainerMail.classList.remove("alert");
+}
 
+function hideAlertText() {
+  let alertContainerText = document.getElementById("txt_alert_msg");
+  alertContainerText.innerText = "";
+  alertContainerText.classList.remove("alert");
+}
