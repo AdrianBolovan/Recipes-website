@@ -71,6 +71,10 @@ function getInputValue() {
   else {
     showSuccesMessage();
   }
+
+  name.value = "";
+  email.value = "";
+  textarea.value = "";
 }
 
 function showNameAlertMessage() {
@@ -117,3 +121,48 @@ function hideAlertText() {
   alertContainerText.innerText = "";
   alertContainerText.classList.remove("alert");
 }
+
+
+// calculator
+
+function CalculatorPortions() {
+    const inputNumPortion = document.querySelector(".num-portion");
+    const calcBtn = document.querySelector("#calcBtn");
+    const valueCells = document.querySelectorAll(".td-value");
+    const basePortions = 1;
+
+    calcBtn.addEventListener("click", () => {
+        const portions = Number(inputNumPortion.value);
+
+        if (!portions || portions <= 0) {
+            alert("Please insert a valid number of portions");
+            return;
+        }
+
+        valueCells.forEach(cell => {
+            const baseValue = Number(cell.dataset.base);
+
+            // Skip empty cells (like Salt)
+            if (!baseValue) {
+                cell.textContent = "";
+                return;
+            }
+
+            const newValue = (baseValue * portions) / basePortions;
+
+            // Round to 2 decimals
+            cell.textContent = Math.round(newValue * 100) / 100;
+        });
+    });
+}
+
+CalculatorPortions();
+
+
+// Deci prima data dau un id elementului de HTML 
+// pe care vreau sa-l selctez cu JS. Apoi creez 
+// o variabila (pe care o denumesc cum vreau eu) si in ea 
+// salvez elementul de html pe care il selectez 
+// fie cu document get element by id, fie cu 
+// document.querySelector (cu asta selectez clasa, nu id-ul)
+

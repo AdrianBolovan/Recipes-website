@@ -84,30 +84,30 @@
         <div class="calculator-btns">
          <div class="ingredients-btn">
          <div class="btn-and-input"> 
-           <input class="num-portion" type="number">
-             <button class="btn"> Calculate</button>
+           <input class="num-portion" id="inputNumPortion" type="number">
+             <button class="btn" id="calcBtn"> Calculate</button>
          </div>
         </div>
         <button class="btn">Download recipe</button>
      </section>
      <table>
         <tr>
-            <td class="td-value">250</td>
+            <td class="td-value" id="valueCells" data-base="250">250</td>
             <td class="td-unit">ml</td>
             <td class="td-ingredients">Milk</td>
         </tr>
             <tr>
-            <td>120</td>
+            <td class="td-value" data-base="120">120</td>
             <td>g</td>
             <td class="td-ingredients">Flour</td>
         </tr>
              <tr>
-            <td>3</td>
+            <td class="td-value" data-base="3">3</td>
             <td></td>
             <td class="td-ingredients">Yolk</td>
         </tr>
              <tr>
-            <td>30</td>
+            <td class="td-value" data-base="30">30</td>
             <td>g</td>
             <td class="td-ingredients">Sugar</td>
         </tr>
@@ -117,12 +117,12 @@
             <td class="td-ingredients">Salt</td>
         </tr>
             <tr>
-            <td>40</td>
+            <td class="td-value" data-base="40">40</td>
             <td>g</td>
             <td class="td-ingredients">Butter</td>
         </tr>
              <tr>
-            <td>3</td>
+            <td class="td-value" data-base="3">3</td>
             <td></td>
             <td class="td-ingredients">Eggs</td>
         </tr>
