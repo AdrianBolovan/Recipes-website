@@ -1,5 +1,14 @@
 .legal-notice-container {
     display: flex;
+    text-align: center;
     flex-direction: column;
-    margin-top: 300px;
+    margin-top: 150px;
+    
+}
+
+.bold {
+  font-family: "Raleway", serif;
+  font-size: 24px;
+  justify-content: center;
+  font-weight: bold;
 }
